@@ -1,3 +1,4 @@
+#python for everybody - chapter 3 the grade calculator exercises
 
 inp = input("Please enter a grade between 1 and 0:")
 
