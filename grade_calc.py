@@ -2,11 +2,13 @@
 
 inp = input("Please enter a grade between 1 and 0:")
 
-
+#if someone uses comma for tenths
 try: 
     inp = inp.replace(",", ".")
 except:
     inp = inp
+    
+    
 try:
     grade = float(inp) 
 except:
@@ -36,5 +38,5 @@ else:
     print("Please enter a valid number")
 
  
-
+#quitting after showing the answer
 
