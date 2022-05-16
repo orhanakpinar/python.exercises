@@ -20,19 +20,14 @@ while True: #To loop the program
         while x >= 0 and x <= 1:
             if x < 0.6 and x >=0:
                 return("Score is F")
-                break
             elif x < 0.7:
                 return("Score is D")
-                break
             elif x < 0.8 :
                 return("Score is C")
-                break
             elif  x < 0.9  :
                 return("Score is B")
-                break
             elif x <= 1:
                 return("Score is A")
-                break
 
     if x >= 0 and x <= 1:
         print(grade_func(x))
