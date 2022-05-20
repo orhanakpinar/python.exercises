@@ -14,7 +14,7 @@ def addsup_calc():
                 total.clear()
             except:
                 print("No result for 0 entry")
-        elif inp == "quit"
+        elif inp == "quit":
             quit()
         else: 
             try:
