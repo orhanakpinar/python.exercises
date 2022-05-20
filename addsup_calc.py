@@ -24,8 +24,7 @@ def addsup_calc():
             except:
                 print("Please enter a value")          
                     
-while True:
-    addsup_calc()
+addsup_calc()
     
     
  
