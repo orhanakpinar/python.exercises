@@ -1,7 +1,6 @@
 #Python for Everybody Chapter 5 Exercises
-total = list()
-
 def addsup_calc():
+    total = list()
     while True:
         inp = input("Please enter a number to add up or enter 'done' to complete your action:")
         try:
