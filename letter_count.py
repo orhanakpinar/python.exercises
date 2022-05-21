@@ -2,14 +2,14 @@
 
 def letter_count():  
     while True:    
-        inp_sent = input("Please enter a sentence or word to count the letter occurences:")
+        inp_sent = input("Please enter some sentence or word to count the letter occurences:")
         inp_word = input("Please enter the letter for searching through your entry:")
         let_count = 0
         inp_sent = inp_sent.lower()
         inp_word = inp_word.lower()
         if len(inp_word) > 1:
             print("Please enter a single letter at a time.")
-        elif len(inp_word) == 0:
+        elif len(inp_word) == 0  or len(inp_sent) == 0:
             print("Please enter a letter.")
         else:
             let_count = 0
