@@ -1,4 +1,5 @@
 #PY4E Dictionaries Chapter 9 Exercise 1+ (with custom file and string library)
+#For PY4E Exercise 2, searching for Mon, Tue, Wed, Thu, Fri, Sat, Sun will bring the ocurrence of the day in mbox.txt
 import string
 
 def text_dict():
