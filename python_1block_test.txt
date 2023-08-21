@@ -1,0 +1,341 @@
+Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> a = 4165
+>>> c = seq(1, 1000, 5)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'seq' is not defined. Did you mean: 'set'?
+>>> a = "This was very strange"
+>>> b = "name this"
+>>>
+>>> for i in a:
+...  c = int,
+...     c = c + 1
+  File "<stdin>", line 3
+    c = c + 1
+TabError: inconsistent use of tabs and spaces in indentation
+>>> c = 0
+>>>
+>>> for i in a:
+...     c = c + 1
+...     print(c)
+...     if c/2 = 17:
+  File "<stdin>", line 4
+    if c/2 = 17:
+       ^^^
+SyntaxError: cannot assign to expression here. Maybe you meant '==' instead of '='?
+>>> for i in a:
+...     c = c + 1
+...     print(c)
+...     if c == 17:
+...             print("Day")
+...     elif:
+  File "<stdin>", line 6
+    elif:
+        ^
+SyntaxError: invalid syntax
+>>>
+>>>
+>>> for i in a:
+...     c = c+1
+...     print(c)
+...     if c == 17:
+...             print("Day 17")
+...     elif c == 7 :
+...             print("Month 7")
+...     elif c == 1996 :
+...             print("Year 1996")
+...
+1
+2
+3
+4
+5
+6
+7
+Month 7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+Day 17
+18
+19
+20
+21
+>>>
+>>>
+>>> for i in a and b:
+...     if c % 2 = TRUE:
+  File "<stdin>", line 2
+    if c % 2 = TRUE:
+       ^^^^^
+SyntaxError: cannot assign to expression here. Maybe you meant '==' instead of '='?
+>>> for i in a & b:
+...     if c % 2 == TRUE:
+...             print("that's odd")
+...     else:
+...             print("now it's even")
+...
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for &: 'str' and 'str'
+>>> def even_odd:
+  File "<stdin>", line 1
+    def even_odd:
+                ^
+SyntaxError: invalid syntax
+>>> def even_odd
+  File "<stdin>", line 1
+    def even_odd
+                ^
+SyntaxError: invalid syntax
+>>> def even_odd() :
+...     for i in a :
+...              c = c + 1
+...             if c % 2 = 0:
+  File "<stdin>", line 4
+    if c % 2 = 0:
+                 ^
+IndentationError: unindent does not match any outer indentation level
+>>> def even_odd() :
+...     for i in a :
+...              c = c + 1
+...             if c % 2 == 0:
+  File "<stdin>", line 4
+    if c % 2 == 0:
+                  ^
+IndentationError: unindent does not match any outer indentation level
+>>> def even_odd() :
+...     for i in a :
+...              c = c + 1
+...              c = c + 1
+...
+>>> def even_odd() :
+...     for i in a :
+...
+  File "<stdin>", line 3
+
+IndentationError: expected an indented block after 'for' statement on line 2
+>>> def even_odd() :
+...     for i in a :
+...             c = c + 1
+...             if c % 2 == 0:
+...                     print("now it's even")
+...             else: print("that's odd")
+...
+>>> even_odd(a)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: even_odd() takes 0 positional arguments but 1 was given
+>>> def even_odd(a) :
+...     for i in a :
+...             c = c + 1
+...             if c % 2 == 0:
+...                     print("now it's even")
+...             else: print("that's odd")
+...
+>>> even_odd(a)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 3, in even_odd
+UnboundLocalError: local variable 'c' referenced before assignment
+>>> def even_odd(a) :
+...     c = int()
+...     for i in a :
+...
+  File "<stdin>", line 4
+
+IndentationError: expected an indented block after 'for' statement on line 3
+>>> %save
+  File "<stdin>", line 1
+    %save
+    ^
+SyntaxError: invalid syntax
+>>> %save freestyle 1
+  File "<stdin>", line 1
+    %save freestyle 1
+    ^
+SyntaxError: invalid syntax
+>>> %save freestyle 1:
+  File "<stdin>", line 1
+    %save freestyle 1:
+    ^
+SyntaxError: invalid syntax
+>>> %save freestyle
+  File "<stdin>", line 1
+    %save freestyle
+    ^
+SyntaxError: invalid syntax
+>>> %save freestyle:
+  File "<stdin>", line 1
+    %save freestyle:
+    ^
+SyntaxError: invalid syntax
+>>> %save "freestyle"
+  File "<stdin>", line 1
+    %save "freestyle"
+    ^
+SyntaxError: invalid syntax
+>>> for i in a:
+...     print("how to save through python shell")
+...
+how to save through python shell
+how to save through python shell
+how to save through python shell
+how to save through python shell
+how to save through python shell
+how to save through python shell
+how to save through python shell
+how to save through python shell
+how to save through python shell
+how to save through python shell
+how to save through python shell
+how to save through python shell
+how to save through python shell
+how to save through python shell
+how to save through python shell
+how to save through python shell
+how to save through python shell
+how to save through python shell
+how to save through python shell
+how to save through python shell
+how to save through python shell
+>>> for i in a:
+...     c = c + 1
+...     print("c")
+...
+c
+c
+c
+c
+c
+c
+c
+c
+c
+c
+c
+c
+c
+c
+c
+c
+c
+c
+c
+c
+c
+>>> for i in a:
+...     c = c + 1
+...     print(c)
+...
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+>>> for i in a:
+...     if c % 2 == 0:
+...             print("now that's even")
+...     else:
+...             print("now it's odd")
+...
+now it's odd
+now it's odd
+now it's odd
+now it's odd
+now it's odd
+now it's odd
+now it's odd
+now it's odd
+now it's odd
+now it's odd
+now it's odd
+now it's odd
+now it's odd
+now it's odd
+now it's odd
+now it's odd
+now it's odd
+now it's odd
+now it's odd
+now it's odd
+now it's odd
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>>
+>>> while c = TRUE:
+  File "<stdin>", line 1
+    while c = TRUE:
+          ^^^^^^^^
+SyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='?
+>>> a + b
+'This was very strangename this'
+>>> b + a
+'name thisThis was very strange'
+>>> print("enough one liners" + " " + "hello world")
+enough one liners hello world
+>>>
