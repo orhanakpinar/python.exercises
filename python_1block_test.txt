@@ -2,7 +2,20 @@
 # i realized that some terminal responses and some prints are same
 # hence, there will be a regex problem to clean this text hereby presented
 
+# i realized i didn't have the include date in the first line
+# because i am already using a version control software for storing this info.
+# besides, every line will be ever existing, once I add the commit.
+# i only know connecting to GitHub with R Studio, not VSCode or others(jupyter)
+# now i realized that I can track the date of my current-old main discussions here.
+# less repeat, more check
+# version control magic
+# 0
+# 0
+# 0
+# 0
+# 0
 
+# I guess 5 digits are enough
 
 
 Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)] on win32
