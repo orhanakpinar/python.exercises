@@ -1,3 +1,10 @@
+# when posting first part of second day's session (24.08.2023 - 02:50)
+# i realized that some terminal responses and some prints are same
+# hence, there will be a regex problem to clean this text hereby presented
+
+
+
+
 Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)] on win32
 Type "help", "copyright", "credits" or "license" for more information.
 >>> a = 4165
@@ -338,4 +345,48 @@ SyntaxError: invalid syntax. Maybe you meant '==' or ':=' instead of '='?
 'name thisThis was very strange'
 >>> print("enough one liners" + " " + "hello world")
 enough one liners hello world
+>>>
+
+
+Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> a = int()
+>>> type(a)
+<class 'int'>
+>>> print(a)
+0
+>>> b = a + 1
+>>> c = int()
+>>> d = c + 1
+>>> e = list()
+>>> for i in b:
+...     print(b)
+...
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'int' object is not iterable
+>>> f = str(b + (1.2*d)**3)
+>>> for i in f:
+...     print(f)
+...
+2.7279999999999998
+2.7279999999999998
+2.7279999999999998
+2.7279999999999998
+2.7279999999999998
+2.7279999999999998
+2.7279999999999998
+2.7279999999999998
+2.7279999999999998
+2.7279999999999998
+2.7279999999999998
+2.7279999999999998
+2.7279999999999998
+2.7279999999999998
+2.7279999999999998
+2.7279999999999998
+2.7279999999999998
+2.7279999999999998
+>>> len(f)
+18
 >>>
