@@ -13,9 +13,9 @@
 # 0
 # 0
 # 0
-# 2
+# 3
 
-# Doing Numpy training
+# Starting Pandas training
 
 
 Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)] on win32
@@ -1050,4 +1050,205 @@ array([[ 1,  2,  3,  4,  2],
        [ 5,  6,  7,  8,  6],
        [ 9, 10, 11, 12, 10],
        [13, 14, 15, 16, 14]])
+>>>
+
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\omen> python
+Python 3.9.12 (main, Apr  4 2022, 05:22:27) [MSC v.1916 64 bit (AMD64)] :: Anaconda, Inc. on win32
+
+Warning:
+This Python interpreter is in a conda environment, but the environment has
+not been activated.  Libraries may fail to load.  To activate this environment
+please see https://conda.io/activation
+
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import pandas
+>>> import pandas as pd
+>>> import numpy as np
+>>> df = pd.DataFrame(
+... Readline internal error
+Traceback (most recent call last):
+  File "C:\Users\omen\anaconda3\lib\site-packages\pyreadline\console\console.py", line 768, in hook_wrapper_23
+    res = ensure_str(readline_hook(prompt))
+  File "C:\Users\omen\anaconda3\lib\site-packages\pyreadline\rlmain.py", line 571, in readline
+    self._readline_from_keyboard()
+  File "C:\Users\omen\anaconda3\lib\site-packages\pyreadline\rlmain.py", line 536, in _readline_from_keyboard
+    if self._readline_from_keyboard_poll():
+  File "C:\Users\omen\anaconda3\lib\site-packages\pyreadline\rlmain.py", line 556, in _readline_from_keyboard_poll
+    result = self.mode.process_keyevent(event.keyinfo)
+  File "C:\Users\omen\anaconda3\lib\site-packages\pyreadline\modes\emacs.py", line 243, in process_keyevent
+    r = self.process_keyevent_queue[-1](keyinfo)
+  File "C:\Users\omen\anaconda3\lib\site-packages\pyreadline\modes\emacs.py", line 286, in _process_keyevent
+    r = dispatch_func(keyinfo)
+  File "C:\Users\omen\anaconda3\lib\site-packages\pyreadline\modes\basemode.py", line 257, in complete
+    completions = self._get_completions()
+  File "C:\Users\omen\anaconda3\lib\site-packages\pyreadline\modes\basemode.py", line 200, in _get_completions
+    r = self.completer(ensure_unicode(text), i)
+  File "C:\Users\omen\anaconda3\lib\rlcompleter.py", line 80, in complete
+    readline.redisplay()
+AttributeError: module 'readline' has no attribute 'redisplay'
+... Readline internal error
+Traceback (most recent call last):
+  File "C:\Users\omen\anaconda3\lib\site-packages\pyreadline\console\console.py", line 768, in hook_wrapper_23
+    res = ensure_str(readline_hook(prompt))
+  File "C:\Users\omen\anaconda3\lib\site-packages\pyreadline\rlmain.py", line 571, in readline
+    self._readline_from_keyboard()
+  File "C:\Users\omen\anaconda3\lib\site-packages\pyreadline\rlmain.py", line 536, in _readline_from_keyboard
+    if self._readline_from_keyboard_poll():
+  File "C:\Users\omen\anaconda3\lib\site-packages\pyreadline\rlmain.py", line 556, in _readline_from_keyboard_poll
+    result = self.mode.process_keyevent(event.keyinfo)
+  File "C:\Users\omen\anaconda3\lib\site-packages\pyreadline\modes\emacs.py", line 243, in process_keyevent
+    r = self.process_keyevent_queue[-1](keyinfo)
+  File "C:\Users\omen\anaconda3\lib\site-packages\pyreadline\modes\emacs.py", line 286, in _process_keyevent
+    r = dispatch_func(keyinfo)
+  File "C:\Users\omen\anaconda3\lib\site-packages\pyreadline\modes\basemode.py", line 257, in complete
+    completions = self._get_completions()
+  File "C:\Users\omen\anaconda3\lib\site-packages\pyreadline\modes\basemode.py", line 200, in _get_completions
+    r = self.completer(ensure_unicode(text), i)
+  File "C:\Users\omen\anaconda3\lib\rlcompleter.py", line 80, in complete
+    readline.redisplay()
+AttributeError: module 'readline' has no attribute 'redisplay'
+...
+...
+... {"a": ["this", "was", "a", "tab"],
+... "b" : ["and", "it", "went", "crazy"],
+... "c" : ["but", "now", "I", "see."]},
+... index = [1,2,3])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "C:\Users\omen\anaconda3\lib\site-packages\pandas\core\frame.py", line 636, in __init__
+    mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)
+  File "C:\Users\omen\anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 502, in dict_to_mgr
+    return arrays_to_mgr(arrays, columns, index, dtype=dtype, typ=typ, consolidate=copy)
+  File "C:\Users\omen\anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 125, in arrays_to_mgr
+    arrays = _homogenize(arrays, index, dtype)
+  File "C:\Users\omen\anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 628, in _homogenize
+    com.require_length_match(val, index)
+  File "C:\Users\omen\anaconda3\lib\site-packages\pandas\core\common.py", line 557, in require_length_match
+    raise ValueError(
+ValueError: Length of values (4) does not match length of index (3)
+>>> #wrong copied huh
+>>> df = pd.DataFrame(
+... {"a": ["this", "was", "a", "tab"],
+... "b" : ["and", "it", "went", "crazy"],
+... "c" : ["but", "now", "I", "see."]},
+... index = [1,2,3,4])
+>>> df
+      a      b     c
+1  this    and   but
+2   was     it   now
+3     a   went     I
+4   tab  crazy  see.
+>>> df.transpose()
+      1    2     3      4
+a  this  was     a    tab
+b   and   it  went  crazy
+c   but  now     I   see.
+>>> type(df)
+<class 'pandas.core.frame.DataFrame'>
+>>> df1 = pd.DataFrame(
+... ["this", "is", "another"]
+... ["type", "of", "angle"]
+... ["yet", "forgot", "comma"]}
+  File "<stdin>", line 4
+    ["yet", "forgot", "comma"]}
+                              ^
+SyntaxError: closing parenthesis '}' does not match opening parenthesis '(' on line 1
+>>> df1 = pd.DataFrame(
+... ["this", "is", "another"],
+... ["type", "of", "angle"],
+... ["now", "made", "true"],
+... ["so", "let's", "roll"],
+... index = [1,2,3,4],
+... columns = ["a", "b", "c", "d"])
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: __init__() got multiple values for argument 'index'
+>>> df1 = pd.DataFrame(
+... [["this", "is", "another"],
+... ["type", "of", "angle"],
+... ["now", "made", "true"],
+... ["brackets", "will", "roll"]],
+... index = [1,2,3,4],
+... columns=["a","b","c","d"])
+Traceback (most recent call last):
+  File "C:\Users\omen\anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 982, in _finalize_columns_and_data
+    columns = _validate_or_indexify_columns(contents, columns)
+  File "C:\Users\omen\anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 1030, in _validate_or_indexify_columns
+    raise AssertionError(
+AssertionError: 4 columns passed, passed data had 3 columns
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "C:\Users\omen\anaconda3\lib\site-packages\pandas\core\frame.py", line 721, in __init__
+    arrays, columns, index = nested_data_to_arrays(
+  File "C:\Users\omen\anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 519, in nested_data_to_arrays
+    arrays, columns = to_arrays(data, columns, dtype=dtype)
+  File "C:\Users\omen\anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 883, in to_arrays
+    content, columns = _finalize_columns_and_data(arr, columns, dtype)
+  File "C:\Users\omen\anaconda3\lib\site-packages\pandas\core\internals\construction.py", line 985, in _finalize_columns_and_data
+    raise ValueError(err) from err
+ValueError: 4 columns passed, passed data had 3 columns
+>>> df1 = pd.DataFrame(
+... [["this", "is", "another"],
+... ["type", "of", "angle"],
+... ["now", "made", "true"],
+... ["brackets", "will", "roll"]],
+... index = [1,2,3,4],
+... columns = ["I", "can't", "count"])
+>>> df1
+          I can't    count
+1      this    is  another
+2      type    of    angle
+3       now  made     true
+4  brackets  will     roll
+>>> df
+      a      b     c
+1  this    and   but
+2   was     it   now
+3     a   went     I
+4   tab  crazy  see.
+>>> arr = np.arange(96,100).reshape(1,4)
+>>> arr
+array([[96, 97, 98, 99]])
+>>> arr.transpose()
+array([[96],
+       [97],
+       [98],
+       [99]])
+>>> arr1 = arr.transpose()
+>>> arr + arr1
+array([[192, 193, 194, 195],
+       [193, 194, 195, 196],
+       [194, 195, 196, 197],
+       [195, 196, 197, 198]])
+>>> arr
+array([[96, 97, 98, 99]])
+>>> arr1
+array([[96],
+       [97],
+       [98],
+       [99]])
+>>> print(arr1)
+[[96]
+ [97]
+ [98]
+ [99]]
+>>> print(arr)
+[[96 97 98 99]]
+>>> arr.column_stack(arr1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'numpy.ndarray' object has no attribute 'column_stack'
+>>> arr.vstack(arr1)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'numpy.ndarray' object has no attribute 'vstack'
+>>> #soon new HW, and more machine learning
 >>>
