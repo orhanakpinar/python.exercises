@@ -1252,3 +1252,265 @@ Traceback (most recent call last):
 AttributeError: 'numpy.ndarray' object has no attribute 'vstack'
 >>> #soon new HW, and more machine learning
 >>>
+
+
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\omen> python
+Python 3.9.18 (main, Sep 11 2023, 14:09:26) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print(5>3)
+True
+>>> print(5>7)
+False
+>>>  print("Is it true that 3 + 2 < 5- 7?")
+  File "<stdin>", line 1
+    print("Is it true that 3 + 2 < 5- 7?")
+IndentationError: unexpected indent
+>>> print("Is it true that 3 + 2 < 5- 7?","\n", 3+2>5-7)
+Is it true that 3 + 2 < 5- 7?
+ True
+>>> print("Is it true that 3 + 2 < 5- 7?","\n", 3+2<5-7)
+Is it true that 3 + 2 < 5- 7?
+ False
+>>> print("Is it true that 3 + 2 < 5- 7?", 3+2<5-7)
+Is it true that 3 + 2 < 5- 7? False
+>>> print("Is it true that 3 + 2 < 5- 7?\n", 3+2<5-7)
+Is it true that 3 + 2 < 5- 7?
+ False
+>>> x = 100
+>>> print(f"There are {x} numbers somwhere")
+There are 100 numbers somwhere
+>>> c =3
+>>> print(f"This is learning python {c} the hard way exercise {c}.5")
+This is learning python 3 the hard way exercise 3.5
+>>> t = f"now I learned python {c} better with formatting"
+>>> print(t)
+now I learned python 3 better with formatting
+>>> d = "Let's live an empty space for trying python {} the hard way."
+>>> d.format(c)
+"Let's live an empty space for trying python 3 the hard way."
+>>> d[1] = "leave"
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+>>> d.replace("live", "leave")
+"Let's leave an empty space for trying python {} the hard way."
+>>> d
+"Let's live an empty space for trying python {} the hard way."
+>>> d = d.replace("live", "leave")
+>>> d.format(c)
+"Let's leave an empty space for trying python 3 the hard way."
+>>> d = d.replace("space", "{}")
+>>> d.format("some", c)
+"Let's leave an empty some for trying python 3 the hard way."
+>>> d = d.replace("{}", "space")
+>>> d
+"Let's leave an empty space for trying python space the hard way."
+>>> d = d.replace(d[8], "a")
+>>> d
+"Let's leave an empty space for trying python space the hard way."
+>>> d = d.replace(d[8], "aseagae4e")
+>>> d
+"Let's leaseagae4eve aseagae4en empty spaseagae4ece for trying python spaseagae4ece the haseagae4erd waseagae4ey."
+>>> d[8]
+'a'
+>>> for i in d:
+...     print(i)
+...
+L
+e
+t
+'
+s
+
+l
+e
+a
+s
+e
+a
+g
+a
+e
+4
+e
+v
+e
+
+a
+s
+e
+a
+g
+a
+e
+4
+e
+n
+
+e
+m
+p
+t
+y
+
+s
+p
+a
+s
+e
+a
+g
+a
+e
+4
+e
+c
+e
+
+f
+o
+r
+
+t
+r
+y
+i
+n
+g
+
+p
+y
+t
+h
+o
+n
+
+s
+p
+a
+s
+e
+a
+g
+a
+e
+4
+e
+c
+e
+
+t
+h
+e
+
+h
+a
+s
+e
+a
+g
+a
+e
+4
+e
+r
+d
+
+w
+a
+s
+e
+a
+g
+a
+e
+4
+e
+y
+.
+>>> print(end1 + end2 + end3 + end4 + end5 + end6, end=' ')
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'end1' is not defined
+>>>  end1 = "C"
+  File "<stdin>", line 1
+    end1 = "C"
+IndentationError: unexpected indent
+>>>  end2 = "h"
+  File "<stdin>", line 1
+    end2 = "h"
+IndentationError: unexpected indent
+>>>  end3 = "e"
+  File "<stdin>", line 1
+    end3 = "e"
+IndentationError: unexpected indent
+>>>  end4 = "e"
+  File "<stdin>", line 1
+    end4 = "e"
+IndentationError: unexpected indent
+>>>  end5 = "s"
+  File "<stdin>", line 1
+    end5 = "s"
+IndentationError: unexpected indent
+>>>  end6 = "e"
+  File "<stdin>", line 1
+    end6 = "e"
+IndentationError: unexpected indent
+>>> end1 = "a"
+>>> end2 = "b"
+>>> end3= "c"
+>>> end4 = "c"
+>>> end4 = "d"
+>>> end5 = "e"
+>>> end6 = "f"
+>>> print(end1 + end2 + end3 + end4 + end5 + end6, end=' ')
+abcdef >>>
+>>> print(end1 + end2 + end3 + end4 + end5 + end6)
+abcdef
+>>> print(end1 + end2 + end3 + end4 + end5 + end6, end=' ')
+abcdef >>> print(end1 + end2 + end3 + end4 + end5 + end6, end=' ')
+abcdef >>>
+>>> print("this is a style to not end the line", now= " ")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'now' is an invalid keyword argument for print()
+>>> print("this is a style to not end the line", end= " ")
+this is a style to not end the line >>> answer = input()
+yes it is
+>>> print("this is a style to not end the line", end= " ", "{}")
+  File "<stdin>", line 1
+    print("this is a style to not end the line", end= " ", "{}")
+                                                               ^
+SyntaxError: positional argument follows keyword argument
+>>> print("this is a style to not end the line","{}", end= " ")
+this is a style to not end the line {} >>> correction = "be careful"
+>>> print(f"this is a style to not end the line.","Actually, {answer}","You must {correction}.", end= " ")
+this is a style to not end the line. Actually, {answer} You must {correction}. >>> print(f"this is a style to not end {3} the line.",f"Actually, {answer}",f"You must {correction}.", end= " ")
+this is a style to not end 3 the line. Actually, yes it is You must be careful. >>>
+>>> from sys import argv
+>>> script one two three four = argv
+  File "<stdin>", line 1
+    script one two three four = argv
+           ^
+SyntaxError: invalid syntax
+>>> script, one, two, three, four = argv
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: not enough values to unpack (expected 5, got 1)
+>>> script, first, second, third = argv
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: not enough values to unpack (expected 4, got 1)
+>>> argv
+['']
+>>> from sys import argv
+>>> argv
+['']
+>>> print("enough, we left at ex14")
+enough, we left at ex14
+>>>
