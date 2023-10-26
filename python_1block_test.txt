@@ -5,6 +5,8 @@ from learn python the hard way
 I learned {} use 
 (means: I am ready to operate an e-mail service)
 
+I reviewed functions a bit
+
 
 >>> print(end1 + end2 + end3 + end4 + end5 + end6, end=' ')
 Traceback (most recent call last):
@@ -86,4 +88,26 @@ ValueError: not enough values to unpack (expected 4, got 1)
 ['']
 >>> print("enough, we left at ex14")
 enough, we left at ex14
+>>>
+
+
+
+Microsoft Windows [Version 10.0.19045.3570]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\omen>python
+Python 3.11.5 | packaged by Anaconda, Inc. | (main, Sep 11 2023, 13:26:23) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> def my1_func(this):
+...     this = this*3
+...     print(this)
+...
+>>> my1_func(243)
+729
+>>> my1_func(words)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'words' is not defined
+>>> my1_func("words")
+wordswordswords
 >>>
