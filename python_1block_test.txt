@@ -111,3 +111,39 @@ NameError: name 'words' is not defined
 >>> my1_func("words")
 wordswordswords
 >>>
+
+Microsoft Windows [Version 10.0.19045.3570]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\omen>python
+Python 3.11.5 | packaged by Anaconda, Inc. | (main, Sep 11 2023, 13:26:23) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 1 == 1 and 2 == 3
+False
+>>> 1 == 1 or 2 == 3
+True
+>>> def bear_room():
+...     print("There A BEARR!")
+...     print("shhh")
+...     bear_moved = False
+...
+>>> wile True:
+  File "<stdin>", line 1
+    wile True:
+         ^^^^
+SyntaxError: invalid syntax
+>>> while True:
+...     choice = input("> ")
+...     if choice == "take honey":
+...             dead("bear slaps you")
+...     elif choic == "taunt bear" and not bear_moved:
+...             print("bear moved")
+...             bear_moved = True
+...     elif choice == "taunt bear" and bear_moved:
+...             dead(" the bear is coming thru")
+...     elif choice == "open door" and bear_moved:
+...             gold_room()
+...     else:
+...             print("I dunno")
+...
+>
