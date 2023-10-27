@@ -7,6 +7,9 @@ I learned {} use
 
 I reviewed functions a bit
 
+And Lists, Dictionaries
+Left at OOP: Classes and Modules
+
 
 >>> print(end1 + end2 + end3 + end4 + end5 + end6, end=' ')
 Traceback (most recent call last):
