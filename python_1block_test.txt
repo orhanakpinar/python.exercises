@@ -410,3 +410,51 @@ AttributeError: 'list' object has no attribute 'reshape'
 [<matplotlib.lines.Line2D object at 0x0000016A2F032AD0>, <matplotlib.lines.Line2D object at 0x0000016A2F043A50>, <matplotlib.lines.Line2D object at 0x0000016A30C80990>, <matplotlib.lines.Line2D object at 0x0000016A30C80A90>, <matplotlib.lines.Line2D object at 0x0000016A30C81250>, <matplotlib.lines.Line2D object at 0x0000016A30C81AD0>, <matplotlib.lines.Line2D object at 0x0000016A30C81F90>, <matplotlib.lines.Line2D object at 0x0000016A30C81CD0>, <matplotlib.lines.Line2D object at 0x0000016A30C82490>, <matplotlib.lines.Line2D object at 0x0000016A30C81650>]
 >>> plt.show()
 >>>
+
+
+>>> import spacy
+2024-04-27 23:31:45.290294: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2024-04-27 23:31:46.238367: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+>>> nlp = spacy.load("tr_core_news_md")
+>>> text = "burası bir ülkedir, ismi Türkiye imiş."
+>>> text2 = "Türkiye çok iyi bir ülkeymiş"
+>>> text3 = "Türkiye çok iyi bir ülke değişmiş."
+>>> text4 = "Burası bir ülke olan Almanya'dır, güzel mi sorulmuş."
+>>> text5 = "Hollanda güzel bir ülke için olmuş, burası bir yermiş."
+>>> text6 = "Türkiye iyi bir ülke olmuş."
+>>> text7 = "Türkiye burası, bir yer güzel ülke için olunmuş mu bilinmiyor."
+>>> text8 = "Burası bir ülke olan Türkiye'dir, çok iyiymiş."
+>>> td = nlp(text)
+>>> td1 = nlp(text2)
+>>> td2 = nlp(text3)
+>>> td3 = nlp(text4)
+>>> td4 = nlp(text5)
+>>> td5 = nlp(text6)
+>>> td6 = nlp(text7)
+>>> td7 = nlp(text8)
+>>> print(td1.text, td2.text, td1.similarity(td2))
+Türkiye çok iyi bir ülkeymiş Türkiye çok iyi bir ülke değişmiş. 0.8715285009373791
+>>> text3 = "Türkiye çok iyi bir ülke değilmiş."
+>>> td2 = nlp(text3)
+>>> print(td1.text, td2.text, td1.similarity(td2))
+Türkiye çok iyi bir ülkeymiş Türkiye çok iyi bir ülke değilmiş. 0.8829101091529867
+>>> text2 = "Türkiye çok iyi bir ülkeymiş."
+>>> td1 = nlp(text2)
+>>> print(td1.text, td2.text, td1.similarity(td2))
+Türkiye çok iyi bir ülkeymiş. Türkiye çok iyi bir ülke değilmiş. 0.9738288507594616
+>>> print(td1.text,"\n", td3.text,"\n", td1.similarity(td3))
+Türkiye çok iyi bir ülkeymiş.
+ Burası bir ülke olan Almanya'dır, güzel mi sorulmuş.
+ 0.706108737299486
+>>> print(td3.text,"\n", td4.text,"\n", td3.similarity(td4))
+Burası bir ülke olan Almanya'dır, güzel mi sorulmuş.
+ Hollanda güzel bir ülke için olmuş, burası bir yermiş.
+ 0.8497978271169833
+>>> print(td3.text,"\n", td7.text,"\n", td3.similarity(td7))
+Burası bir ülke olan Almanya'dır, güzel mi sorulmuş.
+ Burası bir ülke olan Türkiye'dir, çok iyiymiş.
+ 0.8524778370711307
+>>> print(td2.text,"\n", td5.text,"\n", td2.similarity(td5))
+Türkiye çok iyi bir ülke değilmiş.
+ Türkiye iyi bir ülke olmuş.
+ 0.9698122411917983
